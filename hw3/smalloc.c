@@ -98,7 +98,7 @@ void * smalloc (size_t s)
 			current->next = new_header;
 		}
 
-		// re-find
+		// re-find (recurcive)
 		return smalloc(s);
 	}
 }
