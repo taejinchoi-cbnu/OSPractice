@@ -29,3 +29,6 @@
 
 ## 결론
 하드웨어 지원 없는 소프트웨어 malloc에서는 Buddy System으로 해야할듯
+
+## 05/29
+일단 기본적인 linear allocator부터 시작해보자
