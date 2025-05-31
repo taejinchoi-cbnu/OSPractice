@@ -38,14 +38,39 @@ void * smalloc (size_t s)
                 }
             }
             current = current->next;
-        }
+    	}
         find_chunk = best;
     }
 	else if (smalloc_mode == worstfit) {
 		// worst fit
+		smheader_ptr worst = NULL;
+		size_t worst_chunk = 0;
+
+		while (current) {
+			if (current->used == 0 && current->size >= s) {
+				if (current->size > worst_chunk) {
+					worst = current;
+					worst_chunk = current->size;
+				}
+			}
+			current = current->next;
+		}
+		find_chunk = worst;
 	}
 	else {
 		// first fit
+
+		smheader_ptr first = NULL;
+		size_t first_chunk = 0;
+
+		while (current) {
+			if (current->used == 0 && current->size >= s) {
+				first = current;
+				break;
+			}
+			current = current->next;
+		}
+		find_chunk = first;
 	}
 
 	// find_chunk without request more page
@@ -112,7 +137,20 @@ void * sset_mode (smmode m)
 
 void sfree (void * p) 
 {
-	// TODO 
+	if (p == NULL) return;
+
+	smheader_ptr header = (smheader_ptr)((char *)p - sizeof(smheader));
+	smheader_ptr current = smlist;
+
+	while (current) {
+		if (current == header) {
+			header->used = 0;
+			return;
+		}
+		current = current->next;
+	}
+	// p is not in the smlist
+	abort();
 }
 
 void * srealloc (void * p, size_t s) 
