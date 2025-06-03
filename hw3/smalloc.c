@@ -155,13 +155,45 @@ void sfree (void * p)
 
 void * srealloc (void * p, size_t s) 
 {
-	// TODO
-	return 0x0 ; // erase this 
+    // if p is NULL
+	if (p == NULL) return smalloc(s);
+	// if s is 0
+	if (s == 0) {
+		sfree(p);
+		return NULL;
+	}
+	// TODO: 둘 다 아닌 경우 s에 맞는 크기 smlist에서 탐색
+	smheader_ptr origin_header = (smheader_ptr)((char *)p - sizeof(smheader));
+	size_t origin_size = origin_header->size;
+	
+	// case가 3개 s가 작아지는 경우, 같은 경우, 큰 경우
+	if (s < origin_size) {
+		origin_size = origin_size - s;
+	}
+	else if (s == origin_size) {
+		return p;
+	}
+	else {
+		// s > origin_size인 경우
+		// 그런데 s가 smlist에 존재하는 chunk 중 있는 경우 없는 경우
+	}
+
+	return NULL; // 일단 냅둬
 }
 
 void smcoalesce ()
 {
-	//TODO
+	smheader_ptr current = smlist;
+	while (current)
+	{
+		if (current->used == 0 && current->next != NULL && current->next->used == 0) {
+			current->size = current->size + current->next->size + sizeof(smheader);
+			current->next = current->next->next;
+		}
+		else {
+			current = current->next;
+		}
+	}
 }
 
 void smdump () 
