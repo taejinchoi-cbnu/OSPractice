@@ -137,6 +137,7 @@ void * sset_mode (smmode m)
 
 void sfree (void * p) 
 {
+	// if p is null
 	if (p == NULL) return;
 
 	smheader_ptr header = (smheader_ptr)((char *)p - sizeof(smheader));
@@ -167,15 +168,57 @@ void * srealloc (void * p, size_t s)
 	size_t origin_size = origin_header->size;
 	
 	// case가 3개 s가 작아지는 경우, 같은 경우, 큰 경우
+
+	// s가 줄어드는 경우
 	if (s < origin_size) {
-		origin_size = origin_size - s;
+		// header를 포함해서 분할 가능한지 확인 후
+		if (origin_size > s + sizeof(smheader)) {
+			// 가능하다면 split 후 coalesce
+			smheader_ptr split_header = (smheader_ptr)((char *)origin_header + sizeof(smheader) + s);
+			split_header->size = origin_size - s - sizeof(smheader);
+			split_header->used = 0;
+			origin_header->size = s;
+			origin_header->next = split_header;
+			smcoalesce();
+			return p;
+		}
+		else {
+			origin_header->size = s;
+		}
+		return p;
 	}
+	// 같은 경우 아무일도 안 일어남
 	else if (s == origin_size) {
 		return p;
 	}
+	// s > origin_size
 	else {
-		// s > origin_size인 경우
-		// 그런데 s가 smlist에 존재하는 chunk 중 있는 경우 없는 경우
+		// 인접한 블록으로 병합 시도해보기
+		if (origin_header->next != NULL && origin_header->next->used == 0) {
+			if (origin_size + origin_header->next->size + sizeof(smheader) >= s) {
+				// TODO: 1. 병합 가능한 총 크기를 origin_header->size에 반영
+				origin_header->size = origin_size + sizeof(smheader) + origin_header->next->size;
+            	smheader_ptr next_block = origin_header->next; // 제거될 다음 블록을 임시 저장
+                origin_header->next = next_block->next; // 다음 블록을 건너뛰어 연결
+				// TODO: 2. 확장 후 남는 공간이 충분하면 분할하고, 아니면 모두 사용
+
+				if (origin_header > s + sizeof(smheader)) {
+
+				}
+				else {
+
+				}
+
+				// TODO: 3. 분할한 경우
+				smcoalesce();
+				return p;
+			}
+		}
+		// 인접한 블록으로 병합이 안되면 새로 요청
+		else {
+
+		return p;
+		}
 	}
 
 	return NULL; // 일단 냅둬
