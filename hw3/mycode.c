@@ -71,6 +71,7 @@ void InsertContact(char* name, char* number, int age) {
     newContact->next = hashTable[idx];
     hashTable[idx] = newContact;
     printf("연락처 저장 완료.\n");
+    smdump(); // for hw3
 }
 
 void PrintAllContact() {
@@ -85,7 +86,8 @@ void PrintAllContact() {
         }
     }
     if (empty) printf("저장된 연락처가 없습니다.\n");
-    printf("=======================\n\n");
+    printf("=======================\n");
+    smdump(); // for hw3
 }
 
 void FindContact(char* name) {
@@ -119,6 +121,8 @@ void DeleteContact(char* name) {
             else previous->next = current->next;
             sfree(current);
             printf("연락처 삭제 완료.\n");
+            smdump(); // for hw3
+            /* smcoalesce(); */
             return;
         }
         previous = current;
@@ -231,6 +235,7 @@ void FreeAllContacts() {
         hashTable[i] = NULL;
     }
     printf("모든 메모리 해제 완료.\n");
+    smdump(); // for hw3
 }
 
 void PrintMenu() {
