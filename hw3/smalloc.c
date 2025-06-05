@@ -4,6 +4,7 @@
 #include <stdlib.h>
 #include "smalloc.h" 
 #include <sys/mman.h>
+#include <string.h>
 
 smheader_ptr smlist = 0x0 ;
 smmode smalloc_mode = bestfit ;
@@ -146,11 +147,13 @@ void sfree (void * p)
 	while (current) {
 		if (current == header) {
 			header->used = 0;
+			// 해제 후 병합하기
+			smcoalesce();
 			return;
 		}
 		current = current->next;
 	}
-	// p is not in the smlist
+	// p is not in list
 	abort();
 }
 
@@ -200,28 +203,37 @@ void * srealloc (void * p, size_t s)
 				origin_header->size = origin_size + sizeof(smheader) + origin_header->next->size;
             	smheader_ptr next_block = origin_header->next; // 제거될 다음 블록을 임시 저장
                 origin_header->next = next_block->next; // 다음 블록을 건너뛰어 연결
+
 				// TODO: 2. 확장 후 남는 공간이 충분하면 분할하고, 아니면 모두 사용
+				if (origin_header->size > s + sizeof(smheader)) {
+					smheader_ptr split_header = (smheader_ptr)((char *)origin_header + sizeof(smheader) + s);
+					split_header->size = origin_header->size - s - sizeof(smheader);
+					split_header->used = 0;
+					split_header->next = origin_header->next;
 
-				if (origin_header > s + sizeof(smheader)) {
+					// 원본 node의 크기 수정 (필요 없는 부분은 제거 했으니까)
+					origin_header->size = s;
 
+					// 분할하고 병합
+					smcoalesce();
 				}
-				else {
-
-				}
-
-				// TODO: 3. 분할한 경우
-				smcoalesce();
 				return p;
 			}
 		}
 		// 인접한 블록으로 병합이 안되면 새로 요청
 		else {
-
-		return p;
+			// 추가로 요청할 메모리
+			smheader_ptr new_ptr = smalloc(s);
+			// 추가 요청 실패 핸들링
+			if (new_ptr == NULL) return NULL;
+			// p의 데이터를 추가 요청 메모리로 복사 후 기존 메모리 free
+			memcpy(new_ptr, p, origin_size);
+			// 복사 후 기존 메모리 free
+			sfree(p);
+			// 새롭게 할당된 p값 return
+			return new_ptr;
 		}
 	}
-
-	return NULL; // 일단 냅둬
 }
 
 void smcoalesce ()
