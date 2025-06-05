@@ -26,3 +26,6 @@ make
 ```bash
 make clean
 ```
+
+## If encounter issues during the unzipping my hw3 zipfile, I recommend visit my GitHub repository instead.
+(https://github.com/taejinchoi-cbnu/OSPractice/tree/main/hw3)
