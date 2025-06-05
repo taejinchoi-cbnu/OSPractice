@@ -61,8 +61,6 @@ void * smalloc (size_t s)
 	else {
 		// first fit
 		smheader_ptr first = NULL;
-		size_t first_chunk = 0;
-
 		while (current) {
 			if (current->used == 0 && current->size >= s) {
 				first = current;
@@ -112,7 +110,6 @@ void * smalloc (size_t s)
 		new_header->next = NULL;
 
 		// connect new memory to free-list
-		smheader_ptr current = smlist;
 		while (current->next != NULL) {
 			current = current->next;
 		}
@@ -190,6 +187,7 @@ void * srealloc (void * p, size_t s)
             origin_size + origin_header->next->size + sizeof(smheader) >= s) {
             
             // 병합 가능!
+	    origin_header->used = 1;
             origin_header->size = origin_size + sizeof(smheader) + origin_header->next->size;
             smheader_ptr next_block = origin_header->next;
             origin_header->next = next_block->next;
