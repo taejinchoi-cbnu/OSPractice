@@ -9,7 +9,7 @@
 smheader_ptr smlist = 0x0 ;
 smmode smalloc_mode = bestfit ;
 
-void * smalloc (size_t s) 
+void * smalloc (size_t s)
 {
 	if (s == 0) return NULL;
 	
@@ -61,7 +61,6 @@ void * smalloc (size_t s)
 	else {
 		// first fit
 		smheader_ptr first = NULL;
-		size_t first_chunk = 0;
 
 		while (current) {
 			if (current->used == 0 && current->size >= s) {

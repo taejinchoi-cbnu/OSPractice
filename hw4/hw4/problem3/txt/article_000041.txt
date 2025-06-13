@@ -1,0 +1,239 @@
+Daiju Azuma. CC-BY-SA 
+  
+ Toxic chemicals are accumulating in marine creatures in Earth’s deepest ocean
+ic trenches, the first measurements of organic pollutants in these regions have 
+revealed. 
+  
+ “We often think deep-sea trenches are remote and pristine, untouched by human
+s,” says Alan Jamieson, a deep-ocean researcher at the University of Aberdeen,
+ UK. But Jamieson and his colleagues have found man-made organic pollutants at h
+igh levels in shrimp-like crustaceans called amphipods that they collected from 
+two deep-ocean trenches, he told a conference on deep-ocean exploration in Shang
+hai on 8 June. 
+  
+ “It’s really surprising to find pollutants so deep in the ocean at such hig
+h concentrations,” says Jeffrey Drazen, a marine ecologist at the University o
+f Hawaii in Honolulu. 
+  
+ Before this work — which has not yet been published — the study of pollutan
+ts in deep-sea organisms had been limited to those that live at depths of 2,000 
+metres or less1, 2. The latest research tested for levels of organic chemicals i
+n amphipods collected at 7,000–10,000 metres depth, from the Mariana Trench in
+ the western Pacific Ocean — the world’s deepest trench — and from the Ker
+madec Trench near New Zealand. 
+  
+ The creatures were captured during two international expeditions in 2014, when 
+researchers lowered uncrewed landers into the trenches as part of a research pro
+gramme to study deep-ocean ecosystems, sponsored by the US National Science Foun
+dation. 
+  
+ Polluted depths 
+  
+ In both trenches, the amphipods contained polychlorinated biphenyls (PCBs) — 
+used to make plastics and as anti-fouling agents to stop barnacles growing on sh
+ips' hulls — and polybrominated diphenyl ethers (PBDEs), which are used as fla
+me retardants. 
+  
+ Both chemicals are man-made and belong to a category of carbon-based compounds 
+called persistent organic pollutants (POPs) because they are hard to break down.
+ Production of PCBs — which are carcinogens — has been banned in many countr
+ies since the late 1970s; PBDEs, which animal studies suggest may disrupt hormon
+e systems and interfere with neural development, are only now being phased out. 
+  
+ The concentrations of PCBs in the amphipods from the Mariana Trench were partic
+ularly high, and 15 times greater than those found in the Kermadec. “It’s ev
+en higher than in the estuaries of two of the most polluted rivers — the Pearl
+ River and the Liao River — in China,” says Jamieson. 
+  
+ By contrast, the Kermadec Trench contains PBDEs at concentrations five times gr
+eater than the Mariana — and at a level that is higher than in the coastal wat
+ers of New Zealand’s North Island, the study finds. 
+  
+ Douglas Bartlett, a deep-sea microbiologist at the Scripps Institution of Ocean
+ography in San Diego, California, says that the discovery is fascinating. “It 
+hits home very dramatically that the trenches are not that remote after all, and
+ the world is all connected,” he says. 
+  
+ That sinking feeling 
+  
+ “The take-home message is that when you dump rubbish into the sea, it will ul
+timately sink. When [pollutants] fall into the trenches, they have nowhere else 
+to go. So they’re just going to keep building up,” says Jamieson. Eventually
+, the trenches will have higher levels of pollutants than in estuaries, where ch
+emicals are constantly flushed out to open waters, he says. 
+  
+ The researchers suspect that the proximity of the Mariana Trench to large plast
+ic manufacturers in Asia, as well as to a long-term US military base on the isla
+nd of Guam, may have contributed to its high PCB levels. The waters above the tr
+ench are also part of the North Pacific gyre, a system of strong swirling ocean 
+currents that might be sucking materials on the surface down into the deep sea. 
+Both the Mariana and Kermadec trenches are around 11 kilometres deep. “It soun
+ds quite deep, but it’s not in terms of pollutant transport,” says Jamieson.
+ 
+  
+ The high POP levels are a cause for concern, researchers say. The deep-ocean ca
+nyons are “untapped natural resources” — a potential supply of organisms t
+hat could be valuable for a range of commercial applications, including drug dis
+covery, but which might be affected by the pollutants, says Drazen. 
+  
+ Scientists think that deep-ocean trenches could also be an important carbon sin
+k, playing a key part in regulating climate, Bartlett says. In part, that is bec
+ause in the trenches, carbon is pushed deep into Earth's interior when one tecto
+nic plate is thrust underneath another. The trenches are also teeming with micro
+bes that may convert carbon-containing chemicals into forms that aren’t easily
+ converted into carbon dioxide. 
+  
+ “If somehow microbial activities are adversely affected because of all this p
+ollution, I’d wonder what that’s doing to the carbon cycle in general,” sa
+ys Bartlett. ||||| World Amphipoda Database 
+  
+ (part of WoRMS - the World Register of Marine Species) 
+  
+ Introduction 
+  
+ The amphipods belong to the very diverse crustacean class Malacostraca, which i
+ncludes other common groups such as crabs, lobsters and shrimp. The order Amphip
+oda is part of the superorder Peracarida, uniting a diverse group of small shrim
+p-like taxa that brood their young in a pouch, with no independent larval disper
+sal stage. 
+  
+ Amphipods are unique in the possession of three pairs of pleopods and three pai
+rs of uropods. In a small minority of cases secondary reduction of the abdomen m
+ay result in a loss of one or more pairs (e.g. the Caprellidae). No other malaco
+stracan group possesses more than one pair of uropods. The name Amphipoda means 
+‘different feet’ and refers to the different forms of the pereopods (legs) w
+hich contrasts with the related Isopoda meaning ‘same feet’. Amphipods are v
+ariously known as, scuds, shrimp or sideswimmers. Those amphipods that have colo
+nised the land are often referred to as landhoppers and beach dwellers are calle
+d sandhoppers or beach/sand fleas. 
+  
+ The order Amphipoda is very diverse and currently contains 10,207 species which
+ are divided into six suborders: 
+  
+ Suborder Amphilochidea (88 families; 682 genera; 4,140 species) 
+  
+ Suborder Colomastigidea (2 families; 3 genera; 55 species) 
+  
+ Suborder Hyperiidea (35 families; 76 genera; 283 species) 
+  
+ Suborder Hyperiopsidea (3 families; 4 genera; 13 species) 
+  
+ Suborder Pseudingolfiellidea (1 families; 1 genera; 4 species) 
+  
+ Suborder Senticaudata (99 families; 907 genera; 5,638 species) 
+  
+ Amphipods range in size from a millimetre in length to the supergiant amphipod 
+Alicella gigantea at 340 mm. Amphipods can be found in all marine habitats (even
+ the deepest ocean trenches e.g. Hirondellea dubia), and have also colonised fre
+shwaters and terrestrial habitats; even ectoparasitic groups are also known amon
+g them. There are at least 1870 amphipod species and subspecies recorded from fr
+esh or inland waters accounting for ~ 20 % of the total known amphipod diversity
+. Amphipods are important herbivores, detritivores, micropredators and scavenger
+s in most environments and they form an important component of marine and freshw
+ater ecosystems. 
+  
+ History of the database 
+  
+ The World Amphipoda Database arose from a merger in 2010 of the World Amphipoda
+ List compiled over many years by Jim Lowry (Australian Museum), with the Europe
+an Register of Marine Species (ERMS) amphipod list, compiled by Mark Costello wi
+th the help of Denise Bellan-Santini and Jean-Claude Dauvin, and edited up until
+ 2013 with significant additions from the RAMS Amphipoda (Antarctic) list (compi
+led by Claude De Broyer) and from other regional editors. 
+  
+ The original editors of Amphipoda within WoRMS were Mark Costello, Denise Bella
+n-Santini, Jean Claude-Dauvin, & Wim Vader, with Claude de Broyer as Editor of t
+he Register of Antarctic Marine Species (RAMS) Amphipoda. The north-Atlantic lis
+ts were compiled by Mark Costello with assistance from Louise Collier, from Cost
+ello et al. (1989), Brattegard (1997) and Vader et al (1997). The Mediterranean 
+and south Atlantic lists were compiled from Bellan-Santini et al. (1998), Marque
+s and Bellan-Santini (1990, 1991), and Lopes et al. (1993). Additional species w
+ere then found in Dauvin (1999), and for Arctic seas, in Palerud and Vader (1991
+) and Vader (1998). Jim Lowry’s unpublished list was added to WoRMS in 2010 wh
+en he became editor of the Amphipoda. To provide sufficient expert knowledge for
+ maintaining the database, we have now (2013) formed an editorial team to whom t
+he queries on particular taxa should be addressed. 
+  
+ Editorial Team: 
+  
+ Coordinating Editors 
+  
+ Horton, Tammy: edits higher level amphipod taxa, Lysianassoidea and groups with
+out a specialist editor. 
+  
+ Lowry, Jim: edits higher level amphipod taxa, Talitridae, Lysianassoidea and gr
+oups without a specialist editor. 
+  
+ De Broyer, Claude: edits higher level amphipod taxa, Lysianassoidea and groups 
+without a specialist editor. Also a RAMS editor. 
+  
+ Editors [tree] 
+  
+ Links to other Amphipod sites 
+  
+ Feedback 
+  
+ The authors welcome input from visitors to this website who detect errors or om
+issions: we strive to maintain the website as both a comprehensive and an up-to-
+date resource. We aim to update the database regularly and frequently. 
+  
+ The taxonomy in the World Amphipod Database is edited and updated by volunteer 
+experts, assisted by the database management team at VLIZ. 
+  
+ Authors are encouraged to send copies of publications to the respective editor 
+with details of new or revised nomenclature. 
+  
+ References 
+  
+ Bellan-Santini, D, Karaman G.S., Ledoyer, M., Myers, A.A., Ruffo, S. and Vader,
+ W. 1998. The Amphipoda of the Mediterranean, Part 4. Memoires de 1 'lnstitut Oc
+eanographique, Monaco 13: XXVII- XLIV, 815-959. 
+  
+ Bellan-Santini, D. and Dauvin J.C. 1997. Ampeliscidae (Amphipoda) from Iceland 
+with a description of a new species (contribution to the BIOICE research program
+me). Journal of Natural History 31: 1157-1173. 
+  
+ Brattegard, T. 1997. Order Amphipoda, Suborder Caprellidea (Phylum Crustacea) -
+ caprellidean amphipods or skeleton shrimps. In: Brattegard, T., Holthe, T. (edi
+tors), Distribution of marine, benthic macro-organisms in Norway. A tabulated ca
+talogue. Directorate for Nature Management, Trondheim, 23-214. 
+  
+ Costello, M.J., Holmes, J.M.C., McGrath, D. and Myers, A.A. 1989. A review and 
+catalogue of the Amphipoda (Crustacea) in Ireland. Irish Fisheries Investigation
+s, Series B (Marine), No.33: 1-70. 
+  
+ Dauvin J.C. 1999. Mise it jour de la Iiste des especes d'Amphipodes (Crustaces 
+Peracarides) presents en Manche. Cahiers de Biologie Marine 40: 165-183. 
+  
+ Lopes, M.F.R., Marques, J.C. and Bellan-Santini, D. 1993. The benthic amphipod 
+fauna of the Azores (Portugal): an up-to date annotated list of species, and som
+e biogeographic considerations. Crustaceana 65: 204-217. 
+  
+ Marques, J.C. and Bellan-Santini, D. 1993. Biodiversity in the ecosystem of the
+ Portuguese continental shelf: distributional ecology and the role of benthic am
+phipods. Marine Biology 115: 555-564. 
+  
+ Palerud R. and Vader W. 1991 . Marine Amphipoda Gammaridea in North-East Atlant
+ic and Norwegian Arctic. Tromura 68: 97 pp. 
+  
+ Vader W. 1998. Checklist of Amphipoda Gammaroidea ill Barents Sea area. 
+  
+ Vader, W., Brattegard, T., Buhl-Mortensen, L. and Larsen, K. M. 1997. Order Amp
+hipoda, Suborder Gammaridea (Phylum Crustacea) - gammaridean amphipods. In: Brat
+tegard, T., HoIthe, T. (editors). Distribution of marine, benthic macro-organism
+s in Norway. A tabulated catalogue. Directorate for Nature Management, Trondheim
+, 191-212. 
+  
+ Citation 
+  
+ By downloading or consulting data from this website, the visitor acknowledges t
+hat he/she agrees that data from this website, if extracted for secondary analys
+is resulting in a publication, should be cited as follows: 
+  
+ If any data constitutes a substantial proportion of the records used in seconda
+ry analyses (i.e. more than 25% of the data are derived from this source, or the
+ data are essential to arrive at the conclusion of the analysis), the authors/ma
+nagers of the database should be contacted. It may be useful to contact us direc
+tly in case there are additional data that may strengthen the analysis or there 
+are features of the data that are important to consider but may not have been ap
+parent from the metadata. |||||
